@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF &amp; Image Tools — 18 Free Online PDF &amp; Image Tools, No Upload</title>
+<meta name="description" content="Free online PDF and image tools: image to PDF, compress PDF, PDF to image, merge, split, resize, crop, passport photo maker and more. No upload, no sign-up — files stay on your device.">
+<link rel="canonical" href="https://mdabdulla-tools.github.io/pdf-image-tools/">
+<meta property="og:title" content="PDF &amp; Image Tools — 18 Free Online PDF &amp; Image Tools, No Upload">
+<meta property="og:description" content="Free online PDF and image tools: image to PDF, compress PDF, PDF to image, merge, split, resize, crop, passport photo maker and more. No upload, no sign-up — files stay on your device.">
+<meta property="og:type" content="website">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#c0392b">
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f6f6f8;color:#1c1c22}
+header{background:#c0392b;color:#fff;padding:22px 16px;text-align:center}
+header h1{margin:0;font-size:24px} header p{margin:6px 0 0;opacity:.92;font-size:14px}
+.wrap{max-width:760px;margin:0 auto;padding:16px}
+.card{background:#fff;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.card h2{margin:0 0 6px;font-size:18px} .card p{margin:0 0 12px;color:#555;font-size:14px;line-height:1.5}
+button{background:#c0392b;color:#fff;border:0;border-radius:10px;padding:12px 18px;font-size:15px;cursor:pointer;width:100%}
+button:disabled{background:#bbb}
+input[type=file]{width:100%;padding:10px;border:1.5px dashed #c9c9d2;border-radius:10px;background:#fafafa}
+input[type=text]{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;margin:8px 0}
+label{font-size:14px;color:#444}
+.status{font-size:14px;margin-top:10px;min-height:20px;color:#27632a;word-break:break-word}
+.privacy{text-align:center;color:#777;font-size:13px;padding:10px 16px 26px;line-height:1.6}
+.badge{display:inline-block;background:#fff3f0;color:#c0392b;border:1px solid #f0c9c2;border-radius:20px;padding:3px 10px;font-size:12px;margin-top:8px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.tool-link{display:block;background:#fff;border-radius:14px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.08);text-decoration:none;color:#1c1c22}
+.tool-link:hover{outline:2px solid #c0392b}
+.tool-link .t{font-size:16px;font-weight:700;margin:0 0 6px}
+.tool-link .d{font-size:13px;color:#555;margin:0;line-height:1.5}
+#toolSearch{width:100%;padding:13px;border:1.5px solid #c9c9d2;border-radius:10px;font-size:16px;margin:6px 0 16px;background:#fff}
+article{background:#fff;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+article p,article li{color:#444;font-size:15px;line-height:1.65}
+article h2{font-size:18px;margin:18px 0 6px}
+.related{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:8px}
+footer{text-align:center;color:#777;font-size:13px;padding:8px 16px 30px;line-height:1.7}
+footer a,article a{color:#c0392b}
+.sitename{color:#fff;text-decoration:none;font-size:24px;font-weight:700}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <a class="sitename" href="index.html">📄 PDF &amp; Image Tools</a>
+  <p>18 free tools — all processing happens on your device</p>
+  <span class="badge">100% Private — your files never leave your device</span>
+</header>
+<div class="wrap">
+  <article>
+    <h1>PDF &amp; Image Tools — 18 Free Online Tools</h1>
+    <p>Everyday PDF and photo jobs, done in your browser in seconds: convert images to PDF, compress a PDF for an application form, merge or split documents, resize and crop photos, make a passport-size photo, and more.</p>
+    <p>There is nothing to install and nothing to upload. Pick a tool below — your file is processed on your own device and the result downloads straight away. Use the search box to find a tool fast.</p>
+  </article>
+  <input type="text" id="toolSearch" placeholder="🔍 Search tools… e.g. compress, passport, crop">
+  <div class="grid" id="toolGrid">
+    <a class="tool-link" href="image-to-pdf.html" data-search="image to pdf jpg to pdf png to pdf photo to pdf images to pdf converter">
+      <p class="t">🖼️ Image to PDF</p>
+      <p class="d">Select one or more JPG/PNG photos. They become pages of a single PDF, in the order you pick them.</p>
+    </a>
+    <a class="tool-link" href="compress-pdf.html" data-search="compress pdf reduce pdf size shrink pdf pdf compressor smaller pdf online">
+      <p class="t">🗜️ Compress PDF</p>
+      <p class="d">Make a PDF file smaller for email or upload. Best for scanned/photo PDFs. Text stays readable but pages become images inside the new PDF.</p>
+    </a>
+    <a class="tool-link" href="pdf-to-image.html" data-search="pdf to image pdf to jpg pdf to png convert pdf page to image extract images">
+      <p class="t">📸 PDF to Image</p>
+      <p class="d">Select one PDF. Every page becomes a high-quality image. One page downloads as a single image; multiple pages download together in a ZIP file.</p>
+    </a>
+    <a class="tool-link" href="merge-pdf.html" data-search="merge pdf combine pdf join pdf merge pdf files together one pdf">
+      <p class="t">🔗 Merge PDF</p>
+      <p class="d">Select two or more PDF files. They are combined into one PDF, in the order you pick them.</p>
+    </a>
+    <a class="tool-link" href="image-compressor.html" data-search="image compressor compress jpg reduce image size photo compressor kb shrink image">
+      <p class="t">🗜️ Image Compressor</p>
+      <p class="d">Shrink a photo&#x27;s file size for forms, email and uploads. Lower quality = smaller file.</p>
+    </a>
+    <a class="tool-link" href="passport-photo-maker.html" data-search="passport photo maker passport size photo id photo maker visa photo 35x45 photo online">
+      <p class="t">🪪 Passport / ID Photo Maker</p>
+      <p class="d">Make an official-size photo on a white background. You also get a printable sheet of 4 copies.</p>
+    </a>
+    <a class="tool-link" href="image-resizer.html" data-search="image resizer resize image online change photo size pixels resize jpg png dimension">
+      <p class="t">📐 Image Resizer</p>
+      <p class="d">Resize a photo by exact pixels or by aspect ratio — for Facebook, YouTube, documents and forms. Lock the ratio so the photo never stretches.</p>
+    </a>
+    <a class="tool-link" href="split-pdf.html" data-search="split pdf split pdf extract pages separate pdf pages divide pdf">
+      <p class="t">✂️ Split PDF</p>
+      <p class="d">Select one PDF, then type the pages you want, e.g. 1-3 or 2 or 1,4,5. A new PDF with only those pages is created.</p>
+    </a>
+    <a class="tool-link" href="image-converter.html" data-search="image converter jpg to png png to jpg webp to jpg image format converter convert photo">
+      <p class="t">🔁 Image Converter</p>
+      <p class="d">Convert any photo between JPG, PNG and WebP.</p>
+    </a>
+    <a class="tool-link" href="rotate-pdf.html" data-search="rotate pdf rotate pdf pages sideways pdf upside down fix pdf orientation">
+      <p class="t">🔄 Rotate PDF</p>
+      <p class="d">Rotate pages that are sideways or upside down. Applies to all pages, or only the pages you type (e.g. 1,3-5).</p>
+    </a>
+    <a class="tool-link" href="delete-pdf-pages.html" data-search="delete pdf pages remove pages from pdf delete pdf pages remover online">
+      <p class="t">🗑️ Delete Pages</p>
+      <p class="d">Type the pages to REMOVE, e.g. 2 or 1,4-6. A new PDF without those pages is created. The original file is not changed.</p>
+    </a>
+    <a class="tool-link" href="image-cropper.html" data-search="image cropper crop image online crop photo square cropper cut image ratio">
+      <p class="t">✂️ Image Cropper</p>
+      <p class="d">Crop a photo to a ratio. Use the sliders to choose which part to keep.</p>
+    </a>
+    <a class="tool-link" href="rotate-flip-image.html" data-search="rotate &amp; flip image rotate image flip photo sideways mirror image online rotate jpg">
+      <p class="t">🔄 Rotate &amp; Flip Image</p>
+      <p class="d">Fix sideways photos, or flip them left-right / top-bottom.</p>
+    </a>
+    <a class="tool-link" href="add-page-numbers.html" data-search="add page numbers page numbers pdf add numbering pdf pages stamp number pdf">
+      <p class="t">🔢 Add Page Numbers</p>
+      <p class="d">Adds a small page number at the bottom of every page (1, 2, 3 …).</p>
+    </a>
+    <a class="tool-link" href="add-watermark.html" data-search="add text / watermark watermark image add text to photo copyright photo online branding">
+      <p class="t">💧 Add Text / Watermark</p>
+      <p class="d">Write your name, brand or &quot;©&quot; text on a photo.</p>
+    </a>
+    <a class="tool-link" href="photo-filters.html" data-search="photo filters photo filter online black and white filter sepia edit photo filter free">
+      <p class="t">🎨 Photo Filters</p>
+      <p class="d">One-tap looks: Black &amp;amp; White, Sepia, Bright, Warm, Cool, or stronger contrast.</p>
+    </a>
+    <a class="tool-link" href="photo-collage.html" data-search="photo collage collage maker combine photos grid collage online join pictures">
+      <p class="t">🧩 Photo Collage</p>
+      <p class="d">Combine 2–6 photos into one picture — side by side, stacked, or in a grid.</p>
+    </a>
+    <a class="tool-link" href="image-grid-splitter.html" data-search="image grid splitter instagram grid splitter split image 3x3 puzzle maker online">
+      <p class="t">▦ Image Grid Splitter</p>
+      <p class="d">Split one photo into a 3×3 grid for Instagram profile puzzles. Downloads as a ZIP of 9 images, numbered in posting order.</p>
+    </a>
+  </div>
+  <p class="status" id="searchStatus"></p>
+  <article>
+    <h2>Why use these tools?</h2>
+    <p><b>Private:</b> your files never leave your device — there is no server upload at all. <b>Free:</b> every tool is free with no watermark. <b>Fast:</b> no queues and no waiting for uploads or downloads from a server; the work happens instantly in your browser.</p>
+    <p>Read our <a href="privacy.html">Privacy Policy</a> to see exactly how (and how little) data is involved.</p>
+  </article>
+</div>
+<footer>
+  <a href="index.html">Home</a> • <a href="privacy.html">Privacy Policy</a><br>
+  🔒 All processing happens inside your browser on your own device. No file is uploaded to any server. No sign-up. No tracking.
+</footer>
+<script>
+
+document.getElementById('toolSearch').addEventListener('input', function(){
+  const q = this.value.trim().toLowerCase();
+  let visible = 0;
+  document.querySelectorAll('#toolGrid .tool-link').forEach(function(el){
+    const show = !q || el.getAttribute('data-search').includes(q);
+    el.classList.toggle('hidden', !show);
+    if(show) visible++;
+  });
+  document.getElementById('searchStatus').textContent = q && !visible ? 'No tool matches your search. Try pdf, image, compress or photo.' : '';
+});
+
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>

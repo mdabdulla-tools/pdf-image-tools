@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merge PDF Online — Combine PDF Files Free, No Upload</title>
+<meta name="description" content="Merge two or more PDF files into one document online for free. Combine PDFs in the order you pick them. No upload, no sign-up — merging happens on your device.">
+<link rel="canonical" href="https://mdabdulla-tools.github.io/pdf-image-tools/merge-pdf.html">
+<meta property="og:title" content="Merge PDF Online — Combine PDF Files Free, No Upload">
+<meta property="og:description" content="Merge two or more PDF files into one document online for free. Combine PDFs in the order you pick them. No upload, no sign-up — merging happens on your device.">
+<meta property="og:type" content="website">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#c0392b">
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f6f6f8;color:#1c1c22}
+header{background:#c0392b;color:#fff;padding:22px 16px;text-align:center}
+header h1{margin:0;font-size:24px} header p{margin:6px 0 0;opacity:.92;font-size:14px}
+.wrap{max-width:760px;margin:0 auto;padding:16px}
+.card{background:#fff;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.card h2{margin:0 0 6px;font-size:18px} .card p{margin:0 0 12px;color:#555;font-size:14px;line-height:1.5}
+button{background:#c0392b;color:#fff;border:0;border-radius:10px;padding:12px 18px;font-size:15px;cursor:pointer;width:100%}
+button:disabled{background:#bbb}
+input[type=file]{width:100%;padding:10px;border:1.5px dashed #c9c9d2;border-radius:10px;background:#fafafa}
+input[type=text]{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;margin:8px 0}
+label{font-size:14px;color:#444}
+.status{font-size:14px;margin-top:10px;min-height:20px;color:#27632a;word-break:break-word}
+.privacy{text-align:center;color:#777;font-size:13px;padding:10px 16px 26px;line-height:1.6}
+.badge{display:inline-block;background:#fff3f0;color:#c0392b;border:1px solid #f0c9c2;border-radius:20px;padding:3px 10px;font-size:12px;margin-top:8px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.tool-link{display:block;background:#fff;border-radius:14px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.08);text-decoration:none;color:#1c1c22}
+.tool-link:hover{outline:2px solid #c0392b}
+.tool-link .t{font-size:16px;font-weight:700;margin:0 0 6px}
+.tool-link .d{font-size:13px;color:#555;margin:0;line-height:1.5}
+#toolSearch{width:100%;padding:13px;border:1.5px solid #c9c9d2;border-radius:10px;font-size:16px;margin:6px 0 16px;background:#fff}
+article{background:#fff;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+article p,article li{color:#444;font-size:15px;line-height:1.65}
+article h2{font-size:18px;margin:18px 0 6px}
+.related{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:8px}
+footer{text-align:center;color:#777;font-size:13px;padding:8px 16px 30px;line-height:1.7}
+footer a,article a{color:#c0392b}
+.sitename{color:#fff;text-decoration:none;font-size:24px;font-weight:700}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <a class="sitename" href="index.html">📄 PDF &amp; Image Tools</a>
+  <p>18 free tools — all processing happens on your device</p>
+  <span class="badge">100% Private — your files never leave your device</span>
+</header>
+<div class="wrap">
+  <article>
+    <h1>Merge PDF — Combine PDF Files into One</h1>
+    <p>Join two or more PDF files into a single document, in the exact order you select them. Combine certificates, bills, contracts, book chapters or scanned pages into one clean file that is easy to send, print and store.</p>
+    <p>There is no page limit built into the tool and no watermark on the result. Your files are merged locally in your browser — nothing is sent to a server.</p>
+    <h2>How to use this Merge PDF tool</h2>
+    <ol>
+      <li>Select two or more PDF files (pick them in the order you want).</li>
+      <li>Press “Merge PDFs”.</li>
+      <li>Download the combined PDF.</li>
+    </ol>
+    <h2>Private by design</h2>
+    <p>Your file is processed entirely inside your browser, on your own phone or computer. It is never uploaded to a server, never stored, and never seen by anyone else — you can even use this tool offline after the page has loaded once.</p>
+  </article>
+  <div class="card">
+    <h2>🔗 Merge PDF</h2>
+    <p>Select two or more PDF files. They are combined into one PDF, in the order you pick them.</p>
+    <input type="file" id="mergeFiles" accept="application/pdf" multiple>
+    <div style="height:10px"></div>
+    <button id="mergeBtn">Merge PDFs</button>
+    <div class="status" id="mergeStatus"></div>
+  </div>
+  <article>
+    <h2>Related tools</h2>
+    <div class="related">
+      <a class="tool-link" href="split-pdf.html"><p class="t">Split PDF</p><p class="d">Open this tool →</p></a>
+      <a class="tool-link" href="delete-pdf-pages.html"><p class="t">Delete PDF Pages</p><p class="d">Open this tool →</p></a>
+      <a class="tool-link" href="compress-pdf.html"><p class="t">Compress PDF</p><p class="d">Open this tool →</p></a>
+      <a class="tool-link" href="add-page-numbers.html"><p class="t">Add Page Numbers</p><p class="d">Open this tool →</p></a>
+    </div>
+  </article>
+</div>
+<footer>
+  <a href="index.html">← All 18 tools (Home)</a> • <a href="privacy.html">Privacy Policy</a><br>
+  🔒 All processing happens inside your browser on your own device. No file is uploaded to any server. No sign-up. No tracking.
+</footer>
+<script>
+
+const { PDFDocument } = PDFLib;
+function download(bytes, name){
+  const blob = new Blob([bytes], {type:'application/pdf'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = name; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+}
+function setStatus(id, msg){ document.getElementById(id).textContent = msg; }
+
+document.getElementById('mergeBtn').onclick = async () => {
+  const files = [...document.getElementById('mergeFiles').files];
+  if(files.length < 2) return setStatus('mergeStatus','Please select at least two PDF files.');
+  const btn = document.getElementById('mergeBtn'); btn.disabled = true;
+  try{
+    setStatus('mergeStatus','Working…');
+    const out = await PDFDocument.create();
+    let total = 0;
+    for(const f of files){
+      const src = await PDFDocument.load(await f.arrayBuffer());
+      const pages = await out.copyPages(src, src.getPageIndices());
+      pages.forEach(p => out.addPage(p)); total += pages.length;
+    }
+    download(await out.save(), 'merged.pdf');
+    setStatus('mergeStatus','✅ Done — merged.pdf downloaded ('+total+' pages from '+files.length+' files).');
+  }catch(e){ setStatus('mergeStatus','❌ One of the PDFs could not be read (it may be password-protected).'); }
+  btn.disabled = false;
+};
+
+
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>

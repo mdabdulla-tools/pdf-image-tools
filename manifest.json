@@ -1,0 +1,9 @@
+{
+  "name": "PDF & Image Tools \u2014 18 Free Tools",
+  "short_name": "PDF & Image Tools",
+  "description": "18 free offline tools: PDF tools and image tools - convert, merge, split, compress, rotate, resize, crop, passport photo, collage and more.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f6f6f8",
+  "theme_color": "#c0392b"
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photo Filters Online — Black &amp; White, Sepia, Warm &amp; Cool Filters Free</title>
+<meta name="description" content="Apply photo filters online for free: black and white, sepia, bright, high contrast, vivid, warm and cool looks in one tap. No upload, no sign-up.">
+<link rel="canonical" href="https://mdabdulla-tools.github.io/pdf-image-tools/photo-filters.html">
+<meta property="og:title" content="Photo Filters Online — Black &amp; White, Sepia, Warm &amp; Cool Filters Free">
+<meta property="og:description" content="Apply photo filters online for free: black and white, sepia, bright, high contrast, vivid, warm and cool looks in one tap. No upload, no sign-up.">
+<meta property="og:type" content="website">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#c0392b">
+<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f6f6f8;color:#1c1c22}
+header{background:#c0392b;color:#fff;padding:22px 16px;text-align:center}
+header h1{margin:0;font-size:24px} header p{margin:6px 0 0;opacity:.92;font-size:14px}
+.wrap{max-width:760px;margin:0 auto;padding:16px}
+.card{background:#fff;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.card h2{margin:0 0 6px;font-size:18px} .card p{margin:0 0 12px;color:#555;font-size:14px;line-height:1.5}
+button{background:#c0392b;color:#fff;border:0;border-radius:10px;padding:12px 18px;font-size:15px;cursor:pointer;width:100%}
+button:disabled{background:#bbb}
+input[type=file]{width:100%;padding:10px;border:1.5px dashed #c9c9d2;border-radius:10px;background:#fafafa}
+input[type=text]{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;margin:8px 0}
+label{font-size:14px;color:#444}
+.status{font-size:14px;margin-top:10px;min-height:20px;color:#27632a;word-break:break-word}
+.privacy{text-align:center;color:#777;font-size:13px;padding:10px 16px 26px;line-height:1.6}
+.badge{display:inline-block;background:#fff3f0;color:#c0392b;border:1px solid #f0c9c2;border-radius:20px;padding:3px 10px;font-size:12px;margin-top:8px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.tool-link{display:block;background:#fff;border-radius:14px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.08);text-decoration:none;color:#1c1c22}
+.tool-link:hover{outline:2px solid #c0392b}
+.tool-link .t{font-size:16px;font-weight:700;margin:0 0 6px}
+.tool-link .d{font-size:13px;color:#555;margin:0;line-height:1.5}
+#toolSearch{width:100%;padding:13px;border:1.5px solid #c9c9d2;border-radius:10px;font-size:16px;margin:6px 0 16px;background:#fff}
+article{background:#fff;border-radius:14px;padding:18px;margin:14px 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+article p,article li{color:#444;font-size:15px;line-height:1.65}
+article h2{font-size:18px;margin:18px 0 6px}
+.related{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:8px}
+footer{text-align:center;color:#777;font-size:13px;padding:8px 16px 30px;line-height:1.7}
+footer a,article a{color:#c0392b}
+.sitename{color:#fff;text-decoration:none;font-size:24px;font-weight:700}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <a class="sitename" href="index.html">📄 PDF &amp; Image Tools</a>
+  <p>18 free tools — all processing happens on your device</p>
+  <span class="badge">100% Private — your files never leave your device</span>
+</header>
+<div class="wrap">
+  <article>
+    <h1>Photo Filters — One-Tap Looks</h1>
+    <p>Give a photo a new mood in one tap: classic Black &amp; White, vintage Sepia, a Bright lift for dull shots, High Contrast, Vivid colours, or Warm and Cool tones. The filter is applied at full resolution, ready to share or print.</p>
+    <p>Filters are a fast way to make a set of photos look consistent for a page, a listing or an album — no editing skills and no heavy app needed.</p>
+    <h2>How to use this Photo Filters tool</h2>
+    <ol>
+      <li>Select the photo.</li>
+      <li>Choose a filter from the list.</li>
+      <li>Press “Apply Filter & Download”.</li>
+    </ol>
+    <h2>Private by design</h2>
+    <p>Your file is processed entirely inside your browser, on your own phone or computer. It is never uploaded to a server, never stored, and never seen by anyone else — you can even use this tool offline after the page has loaded once.</p>
+  </article>
+  <div class="card">
+    <h2>🎨 Photo Filters</h2>
+    <p>One-tap looks: Black &amp; White, Sepia, Bright, Warm, Cool, or stronger contrast.</p>
+    <input type="file" id="filterFile" accept="image/*">
+    <div style="height:8px"></div>
+    <label>Filter:
+      <select id="filterType" style="padding:8px;border:1px solid #ccc;border-radius:8px">
+        <option value="grayscale(100%)">Black &amp; White</option><option value="sepia(80%)">Sepia</option>
+        <option value="brightness(1.25)">Bright</option><option value="contrast(1.3)">High Contrast</option>
+        <option value="saturate(1.6)">Vivid Colors</option><option value="hue-rotate(-15deg) saturate(1.2)">Warm</option>
+        <option value="hue-rotate(15deg) saturate(1.1)">Cool</option>
+      </select>
+    </label>
+    <div style="height:10px"></div>
+    <button id="filterBtn">Apply Filter &amp; Download</button>
+    <div class="status" id="filterStatus"></div>
+  </div>
+  <article>
+    <h2>Related tools</h2>
+    <div class="related">
+      <a class="tool-link" href="add-watermark.html"><p class="t">Add Text / Watermark</p><p class="d">Open this tool →</p></a>
+      <a class="tool-link" href="photo-collage.html"><p class="t">Photo Collage</p><p class="d">Open this tool →</p></a>
+      <a class="tool-link" href="rotate-flip-image.html"><p class="t">Rotate &amp; Flip Image</p><p class="d">Open this tool →</p></a>
+      <a class="tool-link" href="image-cropper.html"><p class="t">Image Cropper</p><p class="d">Open this tool →</p></a>
+    </div>
+  </article>
+</div>
+<footer>
+  <a href="index.html">← All 18 tools (Home)</a> • <a href="privacy.html">Privacy Policy</a><br>
+  🔒 All processing happens inside your browser on your own device. No file is uploaded to any server. No sign-up. No tracking.
+</footer>
+<script>
+
+const { PDFDocument } = PDFLib;
+function download(bytes, name){
+  const blob = new Blob([bytes], {type:'application/pdf'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = name; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+}
+function setStatus(id, msg){ document.getElementById(id).textContent = msg; }
+
+/* ---------- shared helpers ---------- */
+function parseRanges(text, count){
+  const set = new Set();
+  for(const part of String(text).split(',')){
+    const m = part.trim().match(/^(\d+)\s*-\s*(\d+)$/);
+    if(m){ for(let i=+m[1]; i<=+m[2]; i++) set.add(i); }
+    else if(/^\d+$/.test(part.trim())) set.add(+part.trim());
+  }
+  return [...set].filter(n => n>=1 && n<=count).sort((a,b)=>a-b);
+}
+function downloadBlob(blob, name){
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = name; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+}
+function loadImageFromFile(file){
+  return new Promise((res, rej) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => res({img, url});
+    img.onerror = rej;
+    img.src = url;
+  });
+}
+function canvasBlob(canvas, mime, q){ return new Promise(r => canvas.toBlob(r, mime, q)); }
+function kb(bytes){ return bytes >= 1048576 ? (bytes/1048576).toFixed(2)+' MB' : Math.max(1, Math.round(bytes/1024))+' KB'; }
+
+
+document.getElementById('filterBtn').onclick = async () => {
+  const f = document.getElementById('filterFile').files[0];
+  if(!f) return setStatus('filterStatus','Please select an image first.');
+  const {img} = await loadImageFromFile(f);
+  const canvas = document.createElement('canvas'); canvas.width = img.naturalWidth; canvas.height = img.naturalHeight;
+  const ctx = canvas.getContext('2d');
+  ctx.filter = document.getElementById('filterType').value;
+  ctx.drawImage(img, 0, 0);
+  const blob = await canvasBlob(canvas, 'image/jpeg', 0.92);
+  downloadBlob(blob, 'filtered.jpg');
+  setStatus('filterStatus','✅ Done — filtered image downloaded.');
+};
+
+
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>

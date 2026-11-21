@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mdabdulla-tools.github.io/pdf-image-tools/sitemap.xml
