@@ -10,6 +10,8 @@
 <meta property="og:description" content="Resize images online by exact pixels or aspect ratio (1:1, 4:3, 16:9, 9:16) with a ratio lock so photos never stretch. Free, no upload, works on your device.">
 <meta property="og:type" content="website">
 <link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <meta name="theme-color" content="#c0392b">
 <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
@@ -44,6 +46,7 @@ footer{text-align:center;color:#777;font-size:13px;padding:8px 16px 30px;line-he
 footer a,article a{color:#c0392b}
 .sitename{color:#fff;text-decoration:none;font-size:24px;font-weight:700}
 .hidden{display:none!important}
+.ad-slot{max-width:760px;margin:10px auto;padding:0 16px;text-align:center}.ad-slot:empty{display:none}
 </style>
 </head>
 <body>
@@ -52,6 +55,8 @@ footer a,article a{color:#c0392b}
   <p>18 free tools — all processing happens on your device</p>
   <span class="badge">100% Private — your files never leave your device</span>
 </header>
+<div id="installBar" style="max-width:760px;margin:12px auto 0;padding:0 16px"><div style="background:#fff;border:1.5px solid #c0392b;border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap"><span style="font-size:22px">📲</span><span style="flex:1;min-width:180px;font-size:14px;color:#333"><b>Install this as an app</b> — free, works offline, no Play Store needed.</span><button id="installBtn" style="width:auto;padding:10px 18px">Install App</button></div><div id="installHelp" style="display:none;background:#fff;border-radius:12px;padding:12px 14px;margin-top:8px;font-size:14px;color:#444;line-height:1.7"><b>Android (Chrome):</b> tap the ⋮ menu → <b>Install app</b> / <b>Add to Home screen</b>.<br><b>iPhone (Safari):</b> tap the <b>Share</b> button → <b>Add to Home Screen</b>.</div></div>
+<div class="ad-slot" id="ad-top"></div>
 <div class="wrap">
   <article>
     <h1>Image Resizer — Resize by Pixels or Ratio</h1>
@@ -106,9 +111,11 @@ footer a,article a{color:#c0392b}
     </div>
   </article>
 </div>
+<div class="ad-slot" id="ad-bottom"></div>
 <footer>
   <a href="index.html">← All 18 tools (Home)</a> • <a href="privacy.html">Privacy Policy</a><br>
   🔒 All processing happens inside your browser on your own device. No file is uploaded to any server. No sign-up. No tracking.
+<br>© 2026 PDF &amp; Image Tools — All rights reserved.<br>Developed by <a href="https://www.linkedin.com/in/mdabdullabd" target="_blank" rel="noopener">Md. Abdulla</a>
 </footer>
 <script>
 
@@ -192,5 +199,6 @@ document.getElementById('resizeBtn').onclick = async () => {
 
 if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script>
+<script src="ads.js"></script>
 </body>
 </html>
