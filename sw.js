@@ -1,11 +1,11 @@
-/* Monetag verification + ads service worker (zone 12320151).
-   Required by Monetag for site verification and MultiTag; do not remove. */
+/* Monetag MultiTag service worker (Push zone 12320252).
+   Required by Monetag for MultiTag functioning; do not remove. */
 self.options = {
-    "domain": "5gvci.com",
-    "zoneId": 12320151
+    "domain": "3nbf4.com",
+    "zoneId": 12320252
 }
 self.lary = ""
-importScripts('https://5gvci.com/act/files/service-worker.min.js?r=sw')
+importScripts('https://3nbf4.com/act/files/service-worker.min.js?r=sw')
 
 const CACHE = 'pdf-image-tools-site-v4';
 const FILES = ["./", "./index.html", "./manifest.json", "./image-to-pdf.html", "./compress-pdf.html", "./pdf-to-image.html", "./merge-pdf.html", "./image-compressor.html", "./passport-photo-maker.html", "./image-resizer.html", "./split-pdf.html", "./image-converter.html", "./rotate-pdf.html", "./delete-pdf-pages.html", "./image-cropper.html", "./rotate-flip-image.html", "./add-page-numbers.html", "./add-watermark.html", "./photo-filters.html", "./photo-collage.html", "./image-grid-splitter.html", "./privacy.html", "./ads.js", "./icon-192.png", "./icon-512.png"];
