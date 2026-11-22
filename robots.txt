@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://mdabdulla-tools.github.io/pdf-image-tools/sitemap.xml
+Sitemap: https://pdf-image-tools-free.netlify.app/sitemap.xml
